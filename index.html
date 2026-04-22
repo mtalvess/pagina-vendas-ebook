@@ -1,177 +1,221 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Renda Imediata 3R</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#0a0a0a;
-color:#fff;
-line-height:1.5;
-}
-
-.container{
-max-width:600px;
-margin:auto;
-padding:20px;
-text-align:center;
-}
-
-h1{
-font-size:28px;
-font-weight:700;
-}
-
-.highlight{
-color:#00ff88;
-}
-
-.sub{
-margin-top:10px;
-font-size:16px;
-color:#ccc;
-}
-
-.btn{
-display:block;
-margin:25px auto;
-padding:18px;
-background:#00ff88;
-color:#000;
-text-decoration:none;
-font-weight:700;
-border-radius:10px;
-font-size:18px;
-transition:.3s;
-}
-
-.btn:hover{
-background:#00cc6a;
-}
-
-.box{
-background:#141414;
-padding:18px;
-margin-top:20px;
-border-radius:10px;
-text-align:left;
-}
-
-.box h2{
-font-size:18px;
-margin-bottom:10px;
-}
-
-.check{
-margin:6px 0;
-}
-
-.price{
-margin-top:20px;
-font-size:22px;
-font-weight:700;
-}
-
-.old{
-text-decoration:line-through;
-color:#777;
-font-size:14px;
-}
-
-.badge{
-background:#00ff88;
-color:#000;
-display:inline-block;
-padding:6px 10px;
-border-radius:6px;
-font-size:12px;
-margin-top:10px;
-}
-
-footer{
-margin-top:40px;
-font-size:12px;
-color:#777;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucro na Palma da Mão - Método R$ 17</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            border: 8px solid #00FF00;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .text-primary { color: #00FF00; }
+        .bg-primary { background-color: #00FF00; }
+        .border-primary { border-color: #00FF00; }
+        
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-ticker {
+            display: flex;
+            animation: ticker 30s linear infinite;
+        }
+        .shadow-neon {
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+        }
+    </style>
 </head>
+<body class="selection:bg-[#00FF00] selection:text-black">
 
-<body>
+    <script>
+        const KIWIFY_LINK = "https://pay.kiwify.com.br/KsjlQ0Q"; 
+    </script>
 
-<div class="container">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b-2 border-[#00FF00]/20 px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-6 h-6 bg-primary"></div>
+            <span class="font-black tracking-tighter text-lg italic">LUCRO NA PALMA DA MÃO</span>
+        </div>
+        <div class="hidden md:flex items-center gap-6">
+            <span class="text-[10px] text-primary uppercase font-black tracking-[0.2em]">Inscrições Abertas</span>
+            <a href="https://pay.kiwify.com.br/KsjlQ0Q" class="border-2 border-primary text-primary px-4 py-1 text-[10px] font-black uppercase tracking-widest hover:bg-primary hover:text-black transition-all">
+                QUERO O MEU
+            </a>
+        </div>
+    </header>
 
-<h1>
-Como pessoas comuns estão fazendo <span class="highlight">R$100 por dia</span><br>
-usando apenas o celular
-</h1>
+    <!-- 1. Hero Section -->
+    <section class="pt-40 pb-24 px-6 max-w-7xl mx-auto grid grid-cols-12 gap-12 items-center">
+        <div class="col-span-12 space-y-8">
+            <span class="inline-block px-3 py-1 bg-primary text-black text-[10px] font-black uppercase tracking-[0.3em]">
+                MÉTODO 100% ONLINE & COMPLETO
+            </span>
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.82] tracking-tighter italic uppercase text-white">
+                GANHE DINHEIRO <br />
+                <span class="text-primary">USANDO APENAS</span> <br />
+                O SEU CELULAR
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl font-medium leading-tight uppercase">
+                O guia definitivo para criar uma renda extra do zero absoluto, sem precisar de investimentos altos ou experiência prévia.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 pt-4">
+                <button onclick="location.href=KIWIFY_LINK" class="bg-primary text-black font-black py-4 px-12 text-2xl uppercase tracking-tighter transition-all duration-200 shadow-neon border-2 border-black hover:bg-white cursor-pointer">
+                    QUERO COMEÇAR AGORA
+                </button>
+                <div class="flex items-center gap-4 text-xs text-gray-500 font-mono uppercase tracking-widest">
+                    <div class="flex -space-x-3">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100&h=100" class="w-10 h-10 rounded-full border-2 border-black object-cover" alt="Aluna">
+                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=100&h=100" class="w-10 h-10 rounded-full border-2 border-black object-cover" alt="Aluno">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100&h=100" class="w-10 h-10 rounded-full border-2 border-black object-cover" alt="Aluno">
+                    </div>
+                    <span>+1.500 ALUNOS ATIVOS</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p class="sub">
-Sem experiência, sem aparecer e começando do zero.
-</p>
+    <!-- Ticker Section -->
+    <div class="bg-primary py-3 overflow-hidden border-y-4 border-black">
+        <div class="animate-ticker">
+            <div class="flex items-center gap-8 px-4">
+                <span class="text-black font-black italic uppercase tracking-tighter text-xl">★ GANHE DINHEIRO COM O CELULAR</span>
+                <span class="text-black font-black italic uppercase tracking-tighter text-xl">★ MÉTODO ZERO INVESTIMENTO</span>
+                <span class="text-black font-black italic uppercase tracking-tighter text-xl">★ RESULTADOS COMPROVADOS</span>
+                <span class="text-black font-black italic uppercase tracking-tighter text-xl">★ SUPORTE 24H</span>
+            </div>
+            <div class="flex items-center gap-8 px-4">
+                <span class="text-black font-black italic uppercase tracking-tighter text-xl">★ GANHE DINHEIRO COM O CELULAR</span>
+                <span class="text-black font-black italic uppercase tracking-tighter text-xl">★ MÉTODO ZERO INVESTIMENTO</span>
+                <span class="text-black font-black italic uppercase tracking-tighter text-xl">★ RESULTADOS COMPROVADOS</span>
+                <span class="text-black font-black italic uppercase tracking-tighter text-xl">★ SUPORTE 24H</span>
+            </div>
+        </div>
+    </div>
 
-<a class="btn" href="https://pay.kiwify.com.br/KsjlQ0Q">
-QUERO COMEÇAR AGORA
-</a>
+    <!-- 2. O Que Você Vai Receber -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-zinc-900 border-l-8 border-primary p-6">
+                <span class="text-primary font-mono font-black text-xl">01</span>
+                <h3 class="text-2xl font-black uppercase italic tracking-tighter mt-2">Mentalidade</h3>
+                <p class="text-gray-400 text-sm mt-2 leading-tight uppercase font-medium">Prepare sua mente para o sucesso financeiro digital.</p>
+            </div>
+            <div class="bg-zinc-900 border-l-8 border-primary p-6">
+                <span class="text-primary font-mono font-black text-xl">02</span>
+                <h3 class="text-2xl font-black uppercase italic tracking-tighter mt-2">Passos Iniciais</h3>
+                <p class="text-gray-400 text-sm mt-2 leading-tight uppercase font-medium">Configurando seu negócio em apenas 15 minutos.</p>
+            </div>
+            <div class="bg-zinc-900 border-l-8 border-primary p-6">
+                <span class="text-primary font-mono font-black text-xl">03</span>
+                <h3 class="text-2xl font-black uppercase italic tracking-tighter mt-2">Venda Direta</h3>
+                <p class="text-gray-400 text-sm mt-2 leading-tight uppercase font-medium">Scripts que vendem enquanto você dorme.</p>
+            </div>
+            <div class="bg-zinc-900 border-l-8 border-primary p-6">
+                <span class="text-primary font-mono font-black text-xl">04</span>
+                <h3 class="text-2xl font-black uppercase italic tracking-tighter mt-2">Escala 10X</h3>
+                <p class="text-gray-400 text-sm mt-2 leading-tight uppercase font-medium">Como transformar centavos em milhares de reais.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="badge">Acesso imediato após pagamento</div>
+    <!-- 3. Depoimentos -->
+    <section class="py-24 px-6 max-w-7xl mx-auto border-t-2 border-zinc-900">
+        <h2 class="text-5xl font-black italic tracking-tighter uppercase mb-12 text-center">Resultados de Impacto</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-zinc-900 p-8 border border-zinc-800">
+                <p class="text-2xl font-black italic tracking-tighter uppercase mb-8">"DO ZERO AOS R$ 5.000 EM 30 DIAS."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400" class="w-10 h-10 border-2 border-primary object-cover" alt="Juliana">
+                    <span class="font-black uppercase tracking-widest text-[10px]">JULIANA</span>
+                </div>
+            </div>
+            <div class="bg-zinc-900 p-8 border border-zinc-800">
+                <p class="text-2xl font-black italic tracking-tighter uppercase mb-8">"ABANDONEI MEU EMPREGO EM 2 MESES."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400" class="w-10 h-10 border-2 border-primary object-cover" alt="Marcos">
+                    <span class="font-black uppercase tracking-widest text-[10px]">MARCOS</span>
+                </div>
+            </div>
+            <div class="bg-zinc-900 p-8 border border-zinc-800">
+                <p class="text-2xl font-black italic tracking-tighter uppercase mb-8">"SIMPLES, DIRETO E LUCRATIVO."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400" class="w-10 h-10 border-2 border-primary object-cover" alt="Ana">
+                    <span class="font-black uppercase tracking-widest text-[10px]">ANA</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="box">
-<h2>O que você vai descobrir:</h2>
-<p class="check">✔ 3 formas simples de ganhar dinheiro</p>
-<p class="check">✔ Como começar ainda hoje</p>
-<p class="check">✔ Estratégia sem aparecer</p>
-<p class="check">✔ Método direto e prático</p>
-</div>
+    <!-- 4. Oferta Irresistível -->
+    <section id="oferta" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+            <div class="lg:col-span-7 bg-zinc-900 border-4 border-primary p-12 flex flex-col justify-center text-center lg:text-left">
+                <h2 class="text-5xl md:text-7xl font-black italic leading-[0.85] tracking-tighter uppercase mb-8">
+                    MÉTODO <br /><span class="text-primary italic underline uppercase">COMPLETO</span>
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex gap-3 items-center justify-center lg:justify-start">
+                        <div class="w-4 h-4 bg-primary"></div>
+                        <span class="font-black text-sm uppercase tracking-widest text-gray-300">LISTA DE APPS LUCRATIVOS</span>
+                    </div>
+                    <div class="flex gap-3 items-center justify-center lg:justify-start">
+                        <div class="w-4 h-4 bg-primary"></div>
+                        <span class="font-black text-sm uppercase tracking-widest text-gray-300">PACK DE IMAGENS QUE VENDEM</span>
+                    </div>
+                    <div class="flex gap-3 items-center justify-center lg:justify-start">
+                        <div class="w-4 h-4 bg-primary"></div>
+                        <span class="font-black text-sm uppercase tracking-widest text-gray-300">COMUNIDADE VIP NO TELEGRAM</span>
+                    </div>
+                    <div class="flex gap-3 items-center justify-center lg:justify-start">
+                        <div class="w-4 h-4 bg-primary"></div>
+                        <span class="font-black text-sm uppercase tracking-widest text-gray-300">ACESSO VITALÍCIO AO MÉTODO</span>
+                    </div>
+                </div>
+            </div>
 
-<div class="box">
-<h2>Pra quem é isso?</h2>
-<p class="check">✔ Quem precisa de renda extra</p>
-<p class="check">✔ Quem quer começar do zero</p>
-<p class="check">✔ Quem só tem o celular</p>
-</div>
+            <div class="lg:col-span-5 bg-primary text-black p-12 flex flex-col items-center justify-center text-center">
+                <span class="text-xs font-black opacity-50 uppercase line-through mb-4">De R$ 97,00</span>
+                <div class="mb-8">
+                    <span class="text-lg font-black uppercase italic tracking-tighter">Apenas</span>
+                    <h3 class="text-8xl font-black tracking-tighter italic leading-none">R$ 17</h3>
+                    <span class="text-2xl font-black uppercase italic tracking-tighter">Pagamento Único</span>
+                </div>
+                <p class="text-sm font-black uppercase tracking-widest mb-10 bg-black text-white px-4 py-2">
+                    MENOS QUE O PREÇO DE UM CAFÉ
+                </p>
+                <button onclick="location.href=KIWIFY_LINK" class="w-full py-6 bg-black text-white text-2xl font-black tracking-tighter hover:scale-[1.05] transition-transform cursor-pointer">
+                    QUERO ME INSCREVER
+                </button>
+            </div>
+        </div>
+    </section>
 
-<div class="box">
-<h2>Por que funciona?</h2>
-<p>
-Você não precisa de sorte nem seguidores.<br><br>
-Você só precisa de um celular, internet e aplicar o método certo.
-</p>
-</div>
+    <!-- Footer -->
+    <footer class="bg-primary py-8 border-t-8 border-black">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-black"></div>
+                <span class="text-black font-black text-2xl italic tracking-tighter uppercase">LUCRO NA PALMA DA MÃO</span>
+            </div>
+            <p class="text-black font-black text-[10px] uppercase tracking-widest text-center md:text-right">
+                © 2024 - O MÉTODO DEFINITIVO PARA RENDA EXTRA <br />
+                7 DIAS DE GARANTIA INCONDICIONAL
+            </p>
+        </div>
+    </footer>
 
-<div class="box">
-<h2>Oferta especial</h2>
-<p class="old">De R$97</p>
-<p class="price">Por apenas <span class="highlight">R$17</span></p>
-</div>
-
-<a class="btn" href="https://pay.kiwify.com.br/KsjlQ0Q">
-GARANTIR MEU ACESSO
-</a>
-
-<div class="box">
-<h2>Garantia</h2>
-<p>
-Você tem 7 dias para testar.<br>
-Se não gostar, pode pedir reembolso.
-</p>
-</div>
-
-<footer>
-Pagamento seguro via Pix ou cartão • Acesso imediato
-</footer>
-
-</div>
-
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
