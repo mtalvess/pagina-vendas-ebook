@@ -3,12 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Renda Imediata 3R</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- CSS EXTERNO -->
-<link rel="stylesheet" href="style.css">
+<style>
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:#0b0b0b;
+color:white;
+text-align:center;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+font-size:32px;
+margin-top:40px;
+}
+
+.highlight{
+color:#00ff66;
+font-weight:700;
+}
+
+.sub{
+opacity:0.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:#00ff66;
+color:#000;
+padding:18px 30px;
+font-weight:700;
+border-radius:10px;
+text-decoration:none;
+margin:20px 0;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.badge{
+font-size:12px;
+opacity:0.7;
+margin-bottom:20px;
+}
+
+.box{
+background:#111;
+padding:20px;
+margin:20px 0;
+border-radius:12px;
+text-align:left;
+}
+
+.check{
+margin:8px 0;
+}
+
+.price{
+font-size:28px;
+font-weight:700;
+color:#00ff66;
+}
+
+.old{
+text-decoration:line-through;
+opacity:0.6;
+}
+
+.timer{
+font-size:18px;
+color:#00ff66;
+margin-top:10px;
+}
+
+footer{
+margin-top:40px;
+font-size:12px;
+opacity:0.5;
+}
+</style>
 
 </head>
 
@@ -25,8 +111,13 @@ usando apenas o celular
 Sem experiência, sem aparecer e começando do zero.
 </p>
 
-<a class="btn" href="https://pay.kiwify.com.br/SEU-LINK-AQUI">
-QUERO COMEÇAR AGORA
+<!-- TIMER -->
+<div class="timer">
+⏳ Oferta expira em: <span id="countdown">10:00</span>
+</div>
+
+<a class="btn" href="https://pay.kiwify.com.br/KsjlQ0Q">
+🔥 QUERO COMEÇAR AGORA
 </a>
 
 <div class="badge">Acesso imediato após pagamento</div>
@@ -57,11 +148,11 @@ Você só precisa de um celular, internet e aplicar o método certo.
 <div class="box">
 <h2>Oferta especial</h2>
 <p class="old">De R$97</p>
-<p class="price">Por apenas <span class="highlight">R$17</span></p>
+<p class="price">Por apenas R$17</p>
 </div>
 
-<a class="btn" href="https://pay.kiwify.com.br/SEU-LINK-AQUI">
-GARANTIR MEU ACESSO
+<a class="btn" href="https://pay.kiwify.com.br/KsjlQ0Q">
+⚡ GARANTIR MEU ACESSO AGORA
 </a>
 
 <div class="box">
@@ -78,8 +169,24 @@ Pagamento seguro via Pix ou cartão • Acesso imediato
 
 </div>
 
-<!-- JS EXTERNO -->
-<script src="script.js"></script>
+<script>
+// CONTADOR REGRESSIVO SIMPLES
+let time = 600;
+
+setInterval(() => {
+let min = Math.floor(time / 60);
+let sec = time % 60;
+
+document.getElementById("countdown").innerHTML =
+min + ":" + (sec < 10 ? "0" + sec : sec);
+
+time--;
+
+if(time < 0){
+time = 600;
+}
+}, 1000);
+</script>
 
 </body>
 </html>
